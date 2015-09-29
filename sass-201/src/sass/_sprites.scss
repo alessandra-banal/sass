@@ -1,0 +1,27 @@
+/* Sprites
+------------------------------------------------------------------*/
+
+@import "compass/utilities/sprites";
+@import "img/*.png";
+@include all-img-sprites;
+
+.img-facebook,
+.img-flickr,
+.img-github,
+.img-googleplus,
+.img-linkedin,
+.img-pinterest,
+.img-twitter,
+.img-youtube{
+	width:33px;
+	height:33px;
+	display:block;
+}
+
+.icons{
+	list-style:none;
+	display:flex;
+	flex-direction:row;
+	justify-content: flex-end;
+	margin-top:65px;
+}
