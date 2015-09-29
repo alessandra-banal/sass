@@ -1,0 +1,38 @@
+// Stylesheet
+// Author: Alessandra
+
+
+
+ul{
+	width:75%;
+	@include flexbox-column();
+	margin-bottom: 1.5em;
+	list-style:none;
+	font-family: futura, sans-serif;
+	li{
+		text-align: center;
+		padding: 1em 2em;
+		margin: .5em 0;
+		background-color: $nav-buttons;
+		@include gradient(#000,#fff);
+		@include shadow();
+		a{
+			text-decoration: none;
+			color:$nav-font;
+			font-size: 1.5em;
+		}
+		&:hover{
+			background-color: red;
+			text-decoration: underline;
+		}
+	}
+}
+
+
+@media screen and (min-width: 600px) {
+	ul{
+		width: 100%;
+		@include flexbox-row();
+		justify-content: space-around;
+	}
+}
